@@ -76,14 +76,9 @@ export default function Sidebar() {
                 <br></br>
                 <br></br>
                 <br></br>
+                <br></br>
                 </Stack>            
         </Box>
         </>
   )
 }
-
- 
-// function HandleClick() {
-//     throw new Error('Function not implemented.');
-// }
-
