@@ -12,7 +12,6 @@ const colors={
 const fonts={
   inder:"Inder"
 } 
-// customizing default theme
 const theme= extendTheme({colors,fonts})
 
 
