@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { Inter,Inder } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import { Box, Flex, Heading, Spacer, Text } from '@chakra-ui/react'
 

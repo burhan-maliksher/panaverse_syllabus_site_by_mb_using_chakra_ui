@@ -83,7 +83,7 @@ export default function Sidebar() {
 }
 
  
-function HandleClick() {
-    throw new Error('Function not implemented.');
-}
+// function HandleClick() {
+//     throw new Error('Function not implemented.');
+// }
 
