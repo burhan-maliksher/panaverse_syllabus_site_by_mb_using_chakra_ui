@@ -2,20 +2,15 @@
 import Image from 'next/image'
 import { Inter,Inder } from 'next/font/google'
 import Link from 'next/link'
-// import { inder } from '../components/font';
-
-// import styles from './page.module.css'
-import { Box, Heading, Text } from '@chakra-ui/react'
-
+import { Box, Flex, Heading, Spacer, Text } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
-// const inder = Inder({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <Box className='md:mt-20 p-0 bg-white'>
 
-      <Box className='bg-nav_color m-4 rounded-xl h-auto pb-10 px-5 '>
+      <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} >
 
         <Box className='flex flex-col md:flex-row text-center md:text-left  md:justify-between mb-10 md:mb-0 '>
           <Heading fontFamily={"inder"} className={`{} text-5xl  font-inder md:mt-5 md:ml-2 pt-4 md:pt-0`}>Join 
@@ -45,7 +40,7 @@ export default function Home() {
 
       <Box className='flex mx-2 flex-col text-center pb-10 px-5 '>
         
-        <Box className='bg-nav_color border border-y-4 mt-4 border-x-0 pt-4 rounded-xl border-blue-900'>
+        <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} borderTop={'4px'} borderBottom={'4px'} borderColor={'nav'} className='bg-nav_color border border-y-4 mt-4 border-x-0 pt-4 rounded-xl border-blue-900'>
           <Heading  className='text-bold text-4xl text-extrabold font-serif drop-shadow-[5px_10px_4px_rgba(0,0,0,0.5)] '>
             Core Courses (Common in All Specializations)
           </Heading>
@@ -96,48 +91,50 @@ export default function Home() {
         </Box>
 
         <Box className='pt-4'>
-          <Text  className='text-bold text-4xl text-extrabold font-serif drop-shadow-[5px_10px_4px_rgba(0,0,0,0.5)] '>
+          <Heading textAlign={'center'} className='text-bold text-4xl text-extrabold font-serif drop-shadow-[5px_10px_4px_rgba(0,0,0,0.5)] '>
             Specialized Tracks
-          </Text>
-          <Text className='p-3'>
+          </Heading>
+          <Text textAlign={'center'} p={'3'} mb={'4'} >
             After completing the first three quarters the participants will select one or more specializations consisting of two courses each:
           </Text>
 
-          <Box className='lg:flex lg:flex-row lg:justify-between lg:space-x-4'>
-          
-          <Box className='border border-y-4  border-x-0  rounded-xl border-blue-900'>
-            <Text  className='text-bold text-4xl text-extrabold font-serif drop-shadow-[5px_10px_4px_rgba(0,0,0,0.5)] '>
-              Offered Courses
-            </Text>
-            <Box className=' mt-4 rounded-xl h-auto pb-10 px-0'>
-                <Box className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
-                  <Link href={"#web3"} target="_parent" >Web 3.0 (Blockchain)and Metaverse</Link>
-                </Box>
-                <Box className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
-                  <Link href={"#bio"} target="_parent" >Genomics and Bioinformatics</Link>
-                </Box>
-                <Box className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
-                  <Link href={"#ai"} target="_parent">Artificial Intelligence (AI) and Deep Learning</Link>
-                </Box>
-                <Box className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
-                  <Link href={"#cnc"} target="_parent" >Cloud-Native Computing</Link>
-                </Box>
-                <Box className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
-                  <Link href={"#iot"} target="_parent" >Ambient Computing and IoT</Link>
-                </Box>
-                <Box className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
-                  <Link href={"#net"} target="_parent" >Network Programmability and Automation</Link>
-                </Box>
+          <Box display={['block','flex']}  className='lg:flex lg:flex-row lg:justify-between lg:space-x-4'>
+            
+            <Box m={'4'}  borderRadius={'2xl'} borderTop={'4px'} fontFamily={'inder'} borderBottom={'4px'} borderColor={'nav'} className='border border-y-4  border-x-0  rounded-xl border-blue-900'>
+              <Heading textAlign={'center'} fontWeight={'medium'} fontFamily={'serif'} className='text-bold text-4xl text-extrabold font-serif drop-shadow-[5px_10px_4px_rgba(0,0,0,0.5)] '>
+                Offered Courses
+              </Heading>
+              <Box  mr={['none','auto']} fontWeight={'bold'} fontSize={['xs','xs','xl','2xl']} textAlign={'left'} pb={'10'} px={'0'} className=' mt-4 rounded-xl h-auto pb-10 px-0'>
+                  <Box bg={'teal.300'} py={'4'} px={'2'} w={'fit-content'} borderRightRadius={'3xl'} className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
+                    <Link href={"#web3"} target="_parent" >Web 3.0 (Blockchain)and Metaverse</Link>
+                  </Box>
+                  <Box bg={'teal.300'} p={'4'} w={'fit-content'} borderRightRadius={'3xl'} mt={'2'} className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
+                    <Link href={"#bio"} target="_parent" >Genomics and Bioinformatics</Link>
+                  </Box>
+                  <Box bg={'teal.300'} p={'4'} w={'fit-content'} borderRightRadius={'3xl'} mt={'2'} className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
+                    <Link href={"#ai"} target="_parent">Artificial Intelligence (AI) and Deep Learning</Link>
+                  </Box>
+                  <Box bg={'teal.300'} p={'4'} w={'fit-content'} borderRightRadius={'3xl'} mt={'2'} className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
+                    <Link href={"#cnc"} target="_parent" >Cloud-Native Computing</Link>
+                  </Box>
+                  <Box bg={'teal.300'} p={'4'} w={'fit-content'} borderRightRadius={'3xl'} mt={'2'} className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
+                    <Link href={"#iot"} target="_parent" >Ambient Computing and IoT</Link>
+                  </Box>
+                  <Box bg={'teal.300'} p={'4'} w={'fit-content'} borderRightRadius={'3xl'} mt={'2'} className=' bg-piaic_color mt-2 border md:text-left md:rounded-l-none md:p-4 md:text-2xl cursor-pointer text-lg font-inder font-bold hover:-translate-y-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-yellow-500 hover:drop-shadow-[10px_20px_4px_rgba(0,0,0,0.25)] delay-0 duration-300 md:w-fit pl-1 text-center  rounded-3xl'>
+                    <Link href={"#net"} target="_parent" >Network Programmability and Automation</Link>
+                  </Box>
+              </Box>
+            </Box><Spacer/>
+            <Flex justifyContent={'right'}  mr={'4'} >
+            <Box display={['none','none','flex']}  >
+              <Image src={'/images/books.png'} alt={'books'} width={440} height={500}  />
             </Box>
+            </Flex>
           </Box>
-          <Box className='hidden lg:flex'>
-            <Image src={'/images/books.png'} alt={'books'} width={440} height={500}  />
-          </Box>
-        </Box>
         </Box>
 
         <Box id='web3' className='mt-10 flex flex-col pt-3 items-center  bg-nav_color w-full rounded-xl'>
-          <Box  className=' md:flex-row md:justify-center '>
+          <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} justifyContent={'center'} textAlign={'center'} className=' md:flex-row md:justify-center '>
             
             <Text  className='pl-4 pr-4 text-fuchsia-700 font-inder text-normal  pb-4 lg:text-2xl font-semibold'>
               Web 3.0 (Blockchain) and Metaverse Specialization
@@ -187,7 +184,7 @@ export default function Home() {
         </Box>
 
         <Box id="ai" className='mt-10 flex flex-col pt-3 items-center  bg-nav_color w-full rounded-xl'>
-          <Box className=' md:flex-row md:justify-center '>
+          <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} justifyContent={'center'} textAlign={'center'} className=' md:flex-row md:justify-center '>
             
             <Text  className='pl-4 pr-4 text-indigo-700 font-inder text-normal  pb-4 lg:text-2xl font-semibold'>
               Artificial Intelligence (AI) and Deep Learning Specialization
@@ -235,7 +232,7 @@ export default function Home() {
         </Box>
 
         <Box id="cnc" className='mt-10 flex flex-col pt-3 items-center  bg-nav_color w-full rounded-xl'>
-          <Box className=' md:flex-row md:justify-center '>
+          <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} justifyContent={'center'} textAlign={'center'} className=' md:flex-row md:justify-center '>
             
             <Text className='pl-4 pr-4 text-lime-700 font-inder text-normal  pb-4 lg:text-2xl font-semibold'>
               Cloud-Native Computing Specialization
@@ -284,7 +281,7 @@ export default function Home() {
         </Box>
 
         <Box id="iot" className='mt-10 flex flex-col pt-3 items-center  bg-nav_color w-full rounded-xl'>
-          <Box className=' md:flex-row md:justify-center '>
+          <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} justifyContent={'center'} textAlign={'center'} className=' md:flex-row md:justify-center '>
             
             <Text className='pl-4 pr-4 text-indigo-900 font-inder text-normal  pb-4 lg:text-2xl font-semibold'>
               Ambient Computing and IoT Specialization
@@ -332,7 +329,7 @@ export default function Home() {
         </Box>
 
         <Box id="bio" className='mt-10 flex flex-col pt-3 items-center  bg-nav_color w-full rounded-xl'>
-          <Box className=' md:flex-row md:justify-center '>
+          <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} justifyContent={'center'} textAlign={'center'} className=' md:flex-row md:justify-center '>
             
             <Text className='pl-4 pr-4 text-yellow-700 font-inder text-normal  pb-4 lg:text-2xl font-semibold'>
               Genomics and Bioinformatics Specialization
@@ -382,7 +379,7 @@ export default function Home() {
         </Box>
 
         <Box id="net" className='mt-10 flex flex-col pt-3 items-center  bg-nav_color w-full rounded-xl'>
-          <Box className=' md:flex-row md:justify-center '>
+          <Box bg={'cyancust'} m={'4'} borderRadius={'2xl'} p={'8'} justifyContent={'center'} textAlign={'center'} className=' md:flex-row md:justify-center '>
             
             <Text className='pl-4 pr-4 text-rose-700 font-inder text-normal  pb-4 lg:text-2xl font-semibold'>
               Network Programmability and Automation Specialization
